@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "name": "school.name",
+      "type": "java.lang.String",
+      "description": "School name",
+      "defaultValue": "Geektime"
+    },
+    {
+      "name": "school.level",
+      "type": "java.lang.String",
+      "description": "School level",
+      "defaultValue": "Little"
+    },
+    {
+      "name": "school.location",
+      "type": "java.lang.String",
+      "description": "School location",
+      "defaultValue": "Beijing"
+    }
+  ]
+}
