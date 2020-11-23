@@ -17,7 +17,7 @@ public class GatewayInboundChannelHandler extends ChannelInboundHandlerAdapter {
         log.info("Receive message from: " + ctx.channel().remoteAddress());
         final ByteBuf input = (ByteBuf) msg;
         log.info("Receive client message: " + input.toString(CharsetUtil.UTF_8));
-        final InetSocketAddress innerServiceAddress = new InetSocketAddress("localhost", 8880);
+        final InetSocketAddress innerServiceAddress = new InetSocketAddress("localhost", 8088);
         new TargetClient(ctx)
                 .access(innerServiceAddress, input);
     }
